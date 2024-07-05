@@ -13,7 +13,7 @@ export class AppComponent {
   name = 'Juan Vidal';
   
   // crud de personas
-  personas = ['Juan', 'Carlos', 'Julian'];
+  personas:String[] = ['Juan', 'Carlos', 'Julian'];
   addPerson(){
     this.personas.push('Nuevo item');
   }
@@ -23,7 +23,7 @@ export class AppComponent {
   }
 
   // productos
-  produts:Product[] = [
+  products:Product[] = [
     {
       id: '1',
       image: 'https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg',
@@ -46,5 +46,10 @@ export class AppComponent {
       description: 'Este es un conjunto de mujer muy aestethic', 
     }
   ]
+
+  // recibiendo data del hijo
+  receivedProduct(product:Product){
+    console.log(product);
+  }
 
 }
