@@ -32,16 +32,17 @@ export class ProductComponent implements OnChanges, OnInit, DoCheck, OnDestroy {
   ngOnInit(){
     console.log('3.ngOnInit');
   }
-
   // es casi lo mismo que ngOnChanges, este se puede personalizar mas
   ngDoCheck(){
     console.log('4.ngDoCheck');
   }
-
   //quita el componente de la vista
   ngOnDestroy(){
     console.log('5.ngOnDestroy');
   }
+
+
+  today:Date = new Date();
 
   // recibir elementos del padre
   @Input() product!:Product;

@@ -52,4 +52,5 @@ export class AppComponent {
     console.log(product);
   }
 
+  power:number = 5;
 }

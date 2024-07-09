@@ -39,4 +39,8 @@
       <app-product *ngFor="let product of products" [product]="product" (onAddCart)="receivedProduct($event)"/>
 </div>
 
-<!-- llamar al componente productp -->
+
+<!-- Usando pipe creada por mi -->
+ <h3>Mostrando los valores transformados por pipes</h3>
+<input type="text" [(ngModel)]="power">
+<p>{{power | exponential}}</p>
