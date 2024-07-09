@@ -1,0 +1,35 @@
+.product-container{
+    width: 100%;
+    max-width: 300px;
+    height: 440px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+.product-container:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.274);
+    transform: scale(1.03);
+}
+.product-img-container, .product-img-container img{
+    width: 100%;
+}
+.product-img-container img{
+    height: 100%;
+    object-fit: cover;
+}
+.product-info-container{
+    padding: 1rem;
+    background-color: #fff;
+}
+.product-btn{
+    cursor: pointer;
+}
+.product-img-container{
+    height: 60%;
+    overflow: hidden;
+}
+.product-info-container{
+    height: 50%;
+}

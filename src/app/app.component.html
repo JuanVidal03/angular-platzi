@@ -35,7 +35,7 @@
 
 <!-- Renderizando productos -->
 <h1>Renderizar los productos</h1>
-<div>
+<div class="render-products-container">
       <app-product *ngFor="let product of products" [product]="product" (onAddCart)="receivedProduct($event)"/>
 </div>
 
